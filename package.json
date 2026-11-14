@@ -1,7 +1,32 @@
 {
-  "name": "teknokrraft-portal",
+  "name": "uisphere2.0",
   "private": true,
   "version": "2.0.0",
+  "description": "Official Web & Event Portal for Tekno Krraft 2026, GDG @ SOA ITER Chapter, built with React 18, TypeScript, Vite & Tailwind CSS",
+  "author": "Sky Ruler <skyruler3281@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://sky-ruler.github.io/UISPHERE2.0/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sky-ruler/UISPHERE2.0.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sky-ruler/UISPHERE2.0/issues"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "tailwindcss",
+    "vitest",
+    "gdg",
+    "google-developer-group",
+    "tekno-krraft",
+    "iter-soa",
+    "hackathon",
+    "design-system",
+    "3d-card"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
