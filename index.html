@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Zero-Flash Theme Boot Script -->
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('theme');
+        if (stored === 'light' || stored === 'dark') {
+          document.documentElement.setAttribute('data-theme', stored);
+        } else {
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+        }
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tekno Krraft 2026 &mdash; GDG @ SOA, ITER Chapter</title>
+  <meta name="description" content="Official developer gathering of code, cloud systems, and AI hacks organized by Google Developer Group at ITER Campus, Siksha 'O' Anusandhan, Bhubaneswar. Free registration, ₹2.5L+ prize pool, 30+ technical labs, and 24-hour hack sprint.">
+  <link rel="canonical" href="https://teknokrraft.gdgiter.in/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teknokrraft.gdgiter.in/">
+  <meta property="og:title" content="Tekno Krraft 2026 &mdash; GDG @ SOA, ITER Chapter">
+  <meta property="og:description" content="A 3-day technical gathering of code, cloud architecture, and AI hack sprints organized by students at Google Developer Group, ITER, Siksha 'O' Anusandhan.">
+  <meta property="og:image" content="/assets/tekno-krraft-primary.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://teknokrraft.gdgiter.in/">
+  <meta name="twitter:title" content="Tekno Krraft 2026 &mdash; GDG @ SOA, ITER Chapter">
+  <meta name="twitter:description" content="A 3-day technical gathering of code, cloud architecture, and AI hack sprints organized by students at Google Developer Group, ITER, Siksha 'O' Anusandhan.">
+  <meta name="twitter:image" content="/assets/tekno-krraft-primary.png">
+
+  <!-- Favicon Meta -->
+  <link rel="icon" type="image/svg+xml" href="/assets/gdg-brackets.svg">
+  <link rel="apple-touch-icon" href="/assets/tekno-krraft-primary.png">
+
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono (Strictly NO Inter, Roboto, or Arial per DESIGN.md) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
