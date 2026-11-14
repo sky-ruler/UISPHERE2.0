@@ -42,7 +42,7 @@ export const ClubMemberPass: React.FC = () => {
         <div className="pass-brand-row">
           <div className="pass-club-identity">
             <div className="pass-logo-mini">
-              <img src="/assets/gdg-brackets.svg" alt="Google Developer Group Brackets Logo" width="22" height="13" />
+              <img src={`${import.meta.env.BASE_URL}assets/gdg-brackets.svg`} alt="Google Developer Group Brackets Logo" width="22" height="13" />
             </div>
             <div>
               <h2 className="pass-club-name">GDG @ SOA ITER</h2>

@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
           <div className="footer-col footer-col-brand">
             <div className="footer-logo-row">
               <div className="footer-logo-box">
-                <img src="/assets/gdg-brackets.svg" alt="Google Developer Group Brackets Logo" width="30" height="18" loading="lazy" />
+                <img src={`${import.meta.env.BASE_URL}assets/gdg-brackets.svg`} alt="Google Developer Group Brackets Logo" width="30" height="18" loading="lazy" />
               </div>
               <div>
                 <h3 className="footer-brand-title">Tekno Krraft 2026</h3>

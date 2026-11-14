@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
           {/* Brand Logo & Text */}
           <a href="#hero" className="nav-brand" aria-label="Tekno Krraft 2026 GDG ITER Home">
             <div className="nav-logo-box">
-              <img src="/assets/gdg-brackets.svg" alt="Google Developer Group Brackets Logo" width="28" height="17" />
+              <img src={`${import.meta.env.BASE_URL}assets/gdg-brackets.svg`} alt="Google Developer Group Brackets Logo" width="28" height="17" />
             </div>
             <div className="nav-brand-text">
               <span className="nav-brand-title">Tekno Krraft</span>
